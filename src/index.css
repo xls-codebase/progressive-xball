@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=VT323&display=swap');
+
+body > * {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-family: 'VT323', monospace;
+}
+
+.button {
+    text-align:center;
+}
+.button .material-symbols-outlined {
+    font-size: min(25svw, 90px);
+    
+}
+.message {
+    animation: blink 0.6s linear infinite;
+}
+@keyframes blink {
+    25% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.25;
+    }
+
+    75% {
+        opacity: 0.6;
+    } 
+}
+.okay {
+    color: green;
+}
+.warning {
+    color: crimson;
+}
+#cleared {
+    position: relative;
+    cursor: pointer;
+    color: green;
+}
+#failed {
+    cursor: pointer;
+    color: crimson;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+h1, #score {
+font-family: 'Jost', sans-serif;
+font-family: 'VT323', monospace;
+font-size: min(5svw, 23px);
+text-align: center;
+margin: 2svw 0;
+}
+h1 { 
+    margin: 4svw 0;
+}
+.row {
+    padding: 0 10svw;
+    display: flex;
+    row-gap: 2svw;
+}
+.row div {
+    flex-grow: 1;
+}
+#score .row {
+    margin-top: 5svh;
+}
+
+#rack-info {
+    box-sizing: border-box;
+    margin: 10svh auto;
+}
+.rack-info {
+    display:block;
+    margin: 0 auto;
+    width: 40svw;
+    height: 30svh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.statistics {
+    height: 30vh;
+}
+.chart {
+    height: 25vh;
+    margin: 5vh 0;
+}
